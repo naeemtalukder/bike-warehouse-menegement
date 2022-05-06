@@ -9,7 +9,7 @@ const Banner = () => {
                     <img
                         style={{ height: '500px' }}
                         className="d-block w-100"
-                        src={'https://assets.lightspeedhq.com/img/2020/02/35ea652d-verticals_retail_bike_hero-mobile.jpg'}
+                        src={'https://assets.lightspeedhq.com/img/2018/04/e8e1d4a1-resources_img_4-ways-to-increase-traffic-in-your-bike-store.jpg'}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -23,7 +23,7 @@ const Banner = () => {
                     <img
                         style={{ height: '500px' }}
                         className="d-block w-100"
-                        src={'	https://assets.lightspeedhq.com/img/2020/02/7c094a0a-verticals_retail_bike_halfwidth-1.png'}
+                        src={'https://assets.lightspeedhq.com/img/eb4f1364-t8663_frostbike2021_ls_eventspage-e1621020386921.jpg'}
                         alt="Second slide"
                     />
 
@@ -38,7 +38,7 @@ const Banner = () => {
                     <img
                         style={{ height: '500px' }}
                         className="d-block w-100"
-                        src={'https://assets.lightspeedhq.com/img/52496ae0-t11745_retail-abm_module_bike_new.jpg'}
+                        src={'https://assets.lightspeedhq.com/img/2018/04/b09fc6db-in-page-visuals_4-ways-to-increase-traffic-in-your-bike-store.jpg'}
                         alt="Third slide"
                     />
 

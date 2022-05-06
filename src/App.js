@@ -10,6 +10,7 @@ import Login from './components/Login/Login/Login';
 import Regester from './components/Login/Regester/Regester';
 import Products from './components/Home/Products/Products';
 import ReaquerAuth from './components/Login/RequaerAuth/ReaquerAuth';
+import UpdateProduct from './components/Home/UpdateProduct/UpdateProduct';
 
 function App() {
   return (
@@ -17,7 +18,12 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/products' element={<ReaquerAuth><Products></Products></ReaquerAuth>}></Route>
+        <Route path='/products' element={
+          <ReaquerAuth><Products></Products></ReaquerAuth>
+        }></Route>
+        <Route path='/products/:updateProductId' element={
+          <UpdateProduct></UpdateProduct>
+        }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} />
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/regester' element={<Regester></Regester>}></Route>

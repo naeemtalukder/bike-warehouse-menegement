@@ -1,16 +1,28 @@
 import React from 'react';
-import Banner from '../Home/Banner/Banner'
+import { Link } from 'react-router-dom';
+import Banner from '../Home/Banner/Banner';
+import Products from '../Products/Products';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <section className='container my-5'>
+                <div>
+                    {
+                        <Products></Products>
+                    }
+                </div>
+                <div className='text-center pt-35'>
+                    <Link to='/products' className='bg-color btn text-white my-5'>See All Products</Link>
+                </div>
+            </section>
+            <section className='container my-5'>
                 <div className='text-center my-5'>
                     <h2 className='color my-4'>Get the ultimate bike store guide</h2>
                     <h5 className='color'>Streamline your customer service, optimize your inventory and take your bike store to <br />
                         the next level with Lightspeed.</h5>
-                    <button className='btn btn-dark my-3 px-5 py-2'>Get To Guide</button>
+                    <button className='btn bg-color text-white my-3 px-5 py-2'>Get To Guide</button>
                 </div>
                 <div className='row'>
                     <div className='col-lg-6 col-sm-12 text-center pt-5'>

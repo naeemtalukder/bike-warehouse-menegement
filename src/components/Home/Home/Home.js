@@ -13,9 +13,6 @@ const Home = () => {
                         <Products></Products>
                     }
                 </div>
-                <div className='text-center pt-35'>
-                    <Link to='/products' className='bg-color btn text-white my-5'>See All Products</Link>
-                </div>
             </section>
             <section className='container my-5'>
                 <div className='text-center my-5'>

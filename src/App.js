@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Sheard/Header/Header';
@@ -18,11 +17,11 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/products' element={
-          <ReaquerAuth><Products></Products></ReaquerAuth>
-        }></Route>
-        <Route path='/products/:updateProductId' element={
-          <UpdateProduct></UpdateProduct>
+        <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/products/:productId' element={
+          <ReaquerAuth>
+            <UpdateProduct></UpdateProduct>
+          </ReaquerAuth>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} />
         <Route path='/login' element={<Login></Login>}></Route>

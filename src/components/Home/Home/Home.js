@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useProducts from '../../../Hoock/useProducts';
 import Banner from '../Home/Banner/Banner';
+import Product from '../Product/Product';
 import Products from '../Products/Products';
 
 const Home = () => {
+    const [products, setProducts] = useProducts();
     return (
         <div>
             <Banner></Banner>
             <section className='container my-5'>
-                <div>
+                <div className='container-products'>
                     {
-                        <Products></Products>
+                        products.slice(0, 3).map(product => (
+                            <Product key={product.id} product={product}></Product>
+                        ))
                     }
                 </div>
             </section>

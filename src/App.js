@@ -10,6 +10,8 @@ import Regester from './components/Login/Regester/Regester';
 import Products from './components/Home/Products/Products';
 import ReaquerAuth from './components/Login/RequaerAuth/ReaquerAuth';
 import UpdateProduct from './components/Home/UpdateProduct/UpdateProduct';
+import AddProduct from './components/Home/AddProduct/AddProduct';
+import MyProduct from './components/Home/MyProduct/MyProduct';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <UpdateProduct></UpdateProduct>
           </ReaquerAuth>
         }></Route>
+        <Route path='/addProduct' element={<AddProduct></AddProduct>}></Route>
+        <Route path='/myProduct' element={<MyProduct></MyProduct>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} />
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/regester' element={<Regester></Regester>}></Route>

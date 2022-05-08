@@ -20,23 +20,19 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            {
-                                user ?
-                                    <>
-                                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                                        <Nav.Link as={Link} to="/addProduct">Add Product</Nav.Link>
-                                        <Nav.Link as={Link} to="/products">Products</Nav.Link>
-                                        <Nav.Link as={Link} to="/myProduct">My Product</Nav.Link>
-                                        <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                                    </>
-                                    :
-                                    <>
-                                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                                        <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                                    </>
-                            }
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="/products">Products</Nav.Link>
                         </Nav>
                         <Nav>
+                            {
+                                user &&
+                                <>
+                                    <Nav.Link as={Link} to="/addProduct">Add Product</Nav.Link>
+                                    <Nav.Link as={Link} to="/manageProduct">Manage Product</Nav.Link>
+                                    <Nav.Link as={Link} to="/myProduct">My Product</Nav.Link>
+                                </>
+                            }
                             {user ?
                                 < button onClick={handleLogOut} className='btn blogs'>Logout</button>
                                 :

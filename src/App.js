@@ -12,6 +12,7 @@ import ReaquerAuth from './components/Login/RequaerAuth/ReaquerAuth';
 import UpdateProduct from './components/Home/UpdateProduct/UpdateProduct';
 import AddProduct from './components/Home/AddProduct/AddProduct';
 import MyProduct from './components/Home/MyProduct/MyProduct';
+import ManageProduct from './components/Home/ManageProduct/ManageProduct';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         }></Route>
         <Route path='/addProduct' element={
           <ReaquerAuth><AddProduct></AddProduct></ReaquerAuth>
+        }></Route>
+        <Route path='/manageProduct' element={
+          <ReaquerAuth><ManageProduct></ManageProduct></ReaquerAuth>
         }></Route>
         <Route path='/myProduct' element={
           <ReaquerAuth><MyProduct></MyProduct></ReaquerAuth>

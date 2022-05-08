@@ -1,20 +1,33 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useProducts from '../../../Hoock/useProducts';
 import Banner from '../Home/Banner/Banner';
 import Product from '../Product/Product';
 
 const Home = () => {
-    const [products, setProducts] = useProducts();
+    const [products] = useProducts();
+    const navigate = useNavigate();
+    const handleNavigateProduct = id => {
+        navigate(`/products/${id}`);
+    }
     return (
         <div>
             <Banner></Banner>
             <section className='container my-5'>
-                <h2 className='text-center color my-5'>Stock Bike</h2>
+                <h2 className='text-center color my-5'>Stock Bike </h2>
                 <div className='container-products'>
                     {
-                        products.slice(0, 3).map(product => (
-                            <Product key={product._id} product={product}></Product>
-                        ))
+                        products.slice(0, 3).map(product => <div key={product._id}>
+                            <img
+                                className='w-100'
+                                src={product.img} alt="" />
+                            <h5>{product.name}</h5>
+                            <p>Description: {product.description}</p>
+                            <h6>Supplier: {product.supplierName}</h6>
+                            <p>Quantity {product.quantity}</p>
+                            <p>Price ${product.price}</p>
+                            <button onClick={() => handleNavigateProduct(product._id)} className='btn bg-color text-white'>Update</button>
+                        </div>)
                     }
                 </div>
             </section>

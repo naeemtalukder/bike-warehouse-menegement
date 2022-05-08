@@ -2,6 +2,10 @@
     background-color: #112B3C;
 }
 
+.bg-color-red {
+    background-color: red;
+}
+
 .color {
     color: #112B3C;
 }

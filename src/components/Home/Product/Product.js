@@ -19,6 +19,7 @@ const Product = ({ product }) => {
             <p>Quantity {quantity}</p>
             <p>Price ${price}</p>
             <button onClick={() => handleNavigateProduct(id)} className='btn bg-color text-white'>Update</button>
+            <button className='btn bg-color-red text-white mx-2'>Delete</button>
         </div>
     );
 };

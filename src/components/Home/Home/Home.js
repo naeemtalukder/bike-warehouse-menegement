@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <section className='container my-5'>
-                <h2 className='text-center color my-5'>My Stock</h2>
+                <h2 className='text-center color my-5'>Stock Bike</h2>
                 <div className='container-products'>
                     {
                         products.slice(0, 3).map(product => (

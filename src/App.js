@@ -19,14 +19,20 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/products' element={
+          <ReaquerAuth><Products></Products></ReaquerAuth>
+        }></Route>
         <Route path='/products/:productId' element={
           <ReaquerAuth>
             <UpdateProduct></UpdateProduct>
           </ReaquerAuth>
         }></Route>
-        <Route path='/addProduct' element={<AddProduct></AddProduct>}></Route>
-        <Route path='/myProduct' element={<MyProduct></MyProduct>}></Route>
+        <Route path='/addProduct' element={
+          <ReaquerAuth><AddProduct></AddProduct></ReaquerAuth>
+        }></Route>
+        <Route path='/myProduct' element={
+          <ReaquerAuth><MyProduct></MyProduct></ReaquerAuth>
+        }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} />
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/regester' element={<Regester></Regester>}></Route>

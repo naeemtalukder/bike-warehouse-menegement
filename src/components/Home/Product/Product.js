@@ -14,9 +14,9 @@ const Product = ({ product }) => {
             <img
                 className='w-100'
                 src={img} alt="" />
-            <h4>{name}</h4>
-            <p>Description {description}</p>
-            <h6>Supplier {supplierName}</h6>
+            <h5>{name}</h5>
+            <p>Description: {description}</p>
+            <h6>Supplier: {supplierName}</h6>
             <p>Quantity {quantity}</p>
             <p>Price ${price}</p>
             <button onClick={() => handleNavigateProduct(_id)} className='btn bg-color text-white'>Update</button>

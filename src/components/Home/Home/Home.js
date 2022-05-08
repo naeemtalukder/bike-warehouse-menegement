@@ -13,7 +13,7 @@ const Home = () => {
                 <div className='container-products'>
                     {
                         products.slice(0, 3).map(product => (
-                            <Product key={product.id} product={product}></Product>
+                            <Product key={product._id} product={product}></Product>
                         ))
                     }
                 </div>

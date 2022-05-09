@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import useProducts from '../../../Hoock/useProducts';
@@ -9,7 +9,7 @@ const UpdateProduct = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://agile-refuge-46641.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
@@ -28,6 +28,7 @@ const UpdateProduct = () => {
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         <ListGroupItem>SupplierName: {products.supplierName}</ListGroupItem>
+                        <ListGroupItem>Email: {products.email}</ListGroupItem>
                         <ListGroupItem>Price ${products.price}</ListGroupItem>
                         <ListGroupItem>Quantity: {products.quantity}</ListGroupItem>
                     </ListGroup>

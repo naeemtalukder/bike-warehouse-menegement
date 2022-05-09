@@ -23,6 +23,7 @@ const Home = () => {
                             <h5>{product.name}</h5>
                             <p>Description: {product.description}</p>
                             <h6>Supplier: {product.supplierName}</h6>
+                            <h6>Email: {product.email}</h6>
                             <p>Quantity {product.quantity}</p>
                             <p>Price ${product.price}</p>
                             <button onClick={() => handleNavigateProduct(product._id)} className='btn bg-color text-white'>Update</button>

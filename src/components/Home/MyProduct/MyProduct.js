@@ -14,7 +14,7 @@ const MyProduct = () => {
     const handleDeleteProduct = id => {
         const proceed = window.confirm('Are You Sure');
         if (proceed) {
-            const url = `http://localhost:5000/addProduct/${id}`;
+            const url = `https://agile-refuge-46641.herokuapp.com/addProduct/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -30,7 +30,7 @@ const MyProduct = () => {
     useEffect(() => {
         const email = user?.email;
 
-        const url = `http://localhost:5000/addProduct?email=${email}`;
+        const url = `https://agile-refuge-46641.herokuapp.com/addProduct?email=${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setAddProduct(data))
@@ -48,6 +48,7 @@ const MyProduct = () => {
                         <h5>{product.name}</h5>
                         <p>Description: {product.description}</p>
                         <h6>Supplier: {product.supplierName}</h6>
+                        <h6>Email: {product.email}</h6>
                         <p>Quantity {product.quantity}</p>
                         <p>Price ${product.price}</p>
                         <button onClick={() => handleNavigateProduct(product._id)} className='btn bg-color text-white'>Update</button>

@@ -1,8 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useProducts from '../../../Hoock/useProducts';
 import Banner from '../Home/Banner/Banner';
-import Product from '../Product/Product';
 
 const Home = () => {
     const [products] = useProducts();
@@ -15,7 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <section className='container my-5'>
                 <h2 className='text-center color my-5'>Stock Bike </h2>
-                <div className='container-products'>
+                <div className='manage-product'>
                     {
                         products.slice(0, 3).map(product => <div key={product._id}>
                             <img
@@ -29,6 +28,9 @@ const Home = () => {
                             <button onClick={() => handleNavigateProduct(product._id)} className='btn bg-color text-white'>Update</button>
                         </div>)
                     }
+                </div>
+                <div className='text-center pt-3'>
+                    <Link to='/manageProduct' className='bg-color btn text-white my-5 py-2 px-5'>Manage Product</Link>
                 </div>
             </section>
             <section className='container my-5'>

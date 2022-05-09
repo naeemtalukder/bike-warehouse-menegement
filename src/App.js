@@ -7,12 +7,12 @@ import Footer from './components/Sheard/Footer/Footer';
 import NotFoundPage from './components/Sheard/NotFoundPage/NotFoundPage';
 import Login from './components/Login/Login/Login';
 import Regester from './components/Login/Regester/Regester';
-import Products from './components/Home/Products/Products';
 import ReaquerAuth from './components/Login/RequaerAuth/ReaquerAuth';
 import UpdateProduct from './components/Home/UpdateProduct/UpdateProduct';
 import AddProduct from './components/Home/AddProduct/AddProduct';
 import MyProduct from './components/Home/MyProduct/MyProduct';
 import ManageProduct from './components/Home/ManageProduct/ManageProduct';
+import Products from './components/Home/Products/Products';
 
 function App() {
   return (

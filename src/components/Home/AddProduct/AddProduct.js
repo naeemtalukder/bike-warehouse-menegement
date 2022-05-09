@@ -19,12 +19,13 @@ const AddProduct = () => {
             })
     }
     return (
-        <div className='w-50 mx-auto my-5'>
-            <h2 className='text-center'>Please Add Product</h2>
-            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+        <div className='w-50 mx-auto my-5' style={{ height: '520px' }}>
+            <h2 className='text-center my-3'>Please Add Product</h2>
+            <form className='d-flex flex-column my-2' onSubmit={handleSubmit(onSubmit)}>
+                <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 40 })} />
                 <textarea className='mb-2' placeholder='Description' {...register("description")} />
                 <input className='mb-2' placeholder='Supplier' {...register("supplierName")} />
+                <input className='mb-2' placeholder='email' type="email" {...register("email")} />
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='Photo Url' type="text" {...register("img")} />
                 <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />

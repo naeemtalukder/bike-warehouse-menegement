@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import useProducts from '../../../Hoock/useProducts';
 import './ManageProduct.css';
@@ -42,6 +43,9 @@ const ManageProduct = () => {
                         <button onClick={() => handleDeleteProduct(product._id)} className='btn mx-2 bg-color-red text-white'>Delete</button>
                     </div>)
                 }
+            </div>
+            <div className='text-center pt-3'>
+                <Link to='/addProduct' className='bg-color btn text-white my-5 py-2 px-5'>Add Product</Link>
             </div>
         </div>
     );

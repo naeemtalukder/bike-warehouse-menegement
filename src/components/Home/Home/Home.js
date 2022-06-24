@@ -42,15 +42,17 @@ const Home = () => {
                     <Link to='/manageProduct' className='bg-color btn text-white my-5 py-2 px-5'>Manage Product</Link>
                 </div>
             </section>
-            <section className='container my-5 row'>
-                <div className='col-lg-6 col-sm-12 text-center pt-5'>
-                    <h2 className='color py-4'>Increase sales and keep <br /> customers coming back.</h2>
-                    <h5>From a rewards program to easy-to-use marketing tools for <br /> SMS and email outreach, Lightspeed Loyalty helps you build a <br /> dedicated community of biking enthusiasts online and in store.</h5>
-                </div>
-                <div className='col-lg-6 col-sm-12'>
-                    <img
-                        className='w-100'
-                        src={'https://assets.lightspeedhq.com/img/a0262a6d-verticals_retail_bike_halfwidth-5-e1621020275437.jpg'} alt="" />
+            <section className='container my-5'>
+                <div className="row">
+                    <div className='col-lg-6 col-sm-12 text-center pt-5'>
+                        <h2 className='color py-4'>Increase sales and keep <br /> customers coming back.</h2>
+                        <h5>From a rewards program to easy-to-use marketing tools for <br /> SMS and email outreach, Lightspeed Loyalty helps you build a <br /> dedicated community of biking enthusiasts online and in store.</h5>
+                    </div>
+                    <div className='col-lg-6 col-sm-12'>
+                        <img
+                            className='w-100'
+                            src={'https://assets.lightspeedhq.com/img/a0262a6d-verticals_retail_bike_halfwidth-5-e1621020275437.jpg'} alt="" />
+                    </div>
                 </div>
             </section>
             <section className='row mx-auto my-5'>

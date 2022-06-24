@@ -27,7 +27,7 @@ const UpdateProduct = () => {
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem>SupplierName: {products.supplierName}</ListGroupItem>
+                        <ListGroupItem>Supplier Name: {products.supplierName}</ListGroupItem>
                         <ListGroupItem>Email: {products.email}</ListGroupItem>
                         <ListGroupItem>Price ${products.price}</ListGroupItem>
                         <ListGroupItem>Quantity: {products.quantity}</ListGroupItem>

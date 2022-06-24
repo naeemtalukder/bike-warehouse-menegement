@@ -5,7 +5,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `https://agile-refuge-46641.herokuapp.comhttps://agile-refuge-46641.herokuapp.com//product`;
+        const url = `https://agile-refuge-46641.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {

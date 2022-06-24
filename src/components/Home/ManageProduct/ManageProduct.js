@@ -28,9 +28,9 @@ const ManageProduct = () => {
     return (
         <div className='container mb-5'>
             <h2 className='text-center my-4'>Manage Your Product ({products.length})</h2>
-            <div className="manage-product">
+            <div className="row">
                 {
-                    products.map(product => <div key={product._id}>
+                    products.map(product => <div className='col-lg-4 col-sm-12' key={product._id}>
                         <img
                             className='w-100'
                             src={product.img} alt="" />

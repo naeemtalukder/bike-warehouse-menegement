@@ -14,9 +14,9 @@ const Home = () => {
             <Banner></Banner>
             <section className='container my-5'>
                 <h2 className='text-center color my-5'>Stock Bike </h2>
-                <div className='manage-product'>
+                <div className="row">
                     {
-                        products.slice(0, 3).map(product => <div key={product._id}>
+                        products.slice(0, 3).map(product => <div className='col-lg-4 col-sm-12' key={product._id}>
                             <img
                                 className='w-100'
                                 src={product.img} alt="" />

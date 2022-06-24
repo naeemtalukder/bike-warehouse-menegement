@@ -10,7 +10,7 @@ const Product = ({ product }) => {
     }
     return (
 
-        <div className='service'>
+        <div className='col-lg-4 col-sm-12 service'>
             <img
                 className='w-100'
                 src={img} alt="" />

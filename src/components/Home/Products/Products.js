@@ -10,7 +10,7 @@ const Products = () => {
     return (
         <div className='container my-5'>
             <h2 className='text-center color my-5'>Stock Bike ({products.length})</h2>
-            <div className='manage-product'>
+            <div className='row'>
                 {
                     products.map(product => <Product
                         key={product._id}

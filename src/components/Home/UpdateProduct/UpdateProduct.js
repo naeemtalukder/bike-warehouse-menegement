@@ -38,7 +38,7 @@ const UpdateProduct = () => {
                 </Card>
             </div>
             <div className='text-center mb-5'>
-                <h5 className='text-center mt-3'>Add New Quantity</h5>
+                <h5 className='text-center mt-3'>Add Quantity</h5>
                 <form>
                     <input className='w-50 my-3' type="number" name="number" id="" />
                     <input type="submit" value="Add Quantity" />
